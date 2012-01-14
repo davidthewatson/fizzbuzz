@@ -1,2 +1,2 @@
-from sys import stdout
-[(lambda x=x: stdout.write('FizzBuzz\n') if x % 3 == 0 and x % 5 == 0 else stdout.write('Fizz\n') if x % 3 == 0 else stdout.write('Buzz\n') if x % 5 == 0 else stdout.write(str(x) + '\n'))() for x in xrange(1,101)]
+from __future__ import print_function
+[(lambda x=x: print('FizzBuzz') if x % 3 == 0 and x % 5 == 0 else print('Fizz') if x % 3 == 0 else print('Buzz') if x % 5 == 0 else print(str(x)))() for x in xrange(1,101)]
