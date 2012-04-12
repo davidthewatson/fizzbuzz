@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Fizzbuzz by davidthewatson</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Fizzbuzz</h1>
+        <h2>The fizzbuzz nonsense - python version</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/davidthewatson/fizzbuzz/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/davidthewatson/fizzbuzz/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/davidthewatson/fizzbuzz" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <p>My mildly dysfunctional versions of FizzBuzz in python 3.</p>
+
+<p>The shortest of these is the single line lambda version that is not pep8-compliant due to the line length. I've yet to see a shorter version in python 3. This clocks in at 151 characters.</p>
+
+<pre><code>     205 function calls in 0.001 seconds
+</code></pre>
+
+<p>Ordered by: standard name</p>
+
+<p>ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      101    0.000    0.000    0.000    0.000 non-pep8_lambda_fizzbuzz.py:1()
+      100    0.000    0.000    0.000    0.000 non-pep8_lambda_fizzbuzz.py:1()
+        1    0.000    0.000    0.001    0.001 non-pep8_lambda_fizzbuzz.py:1()
+        1    0.000    0.000    0.001    0.001 {built-in method exec}
+        1    0.001    0.001    0.001    0.001 {built-in method print}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}</p>
+
+<p>The pep8-compliant lambda version is longer, but perhaps more readable. Performance is, of course, identical to the one-line version.</p>
+
+<pre><code>     205 function calls in 0.001 seconds
+</code></pre>
+
+<p>Ordered by: standard name</p>
+
+<p>ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+      101    0.000    0.000    0.000    0.000 pep8_lambda_fizzbuzz.py:1()
+      100    0.000    0.000    0.000    0.000 pep8_lambda_fizzbuzz.py:1()
+        1    0.000    0.000    0.001    0.001 pep8_lambda_fizzbuzz.py:1()
+        1    0.000    0.000    0.001    0.001 {built-in method exec}
+        1    0.001    0.001    0.001    0.001 {built-in method print}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}</p>
+
+<p>The loopy set version is surprisingly fast given how much more iteration there is - 2 to 5 times as much depending on which versions you are comparing.</p>
+
+<pre><code>     524 function calls in 0.001 seconds
+</code></pre>
+
+<p>Ordered by: standard name</p>
+
+<p>ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.001    0.001 pep8_loopy_sets_fizzbuzz.py:1()
+       34    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:3()
+      100    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:3()
+       21    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:4()
+      100    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:4()
+        7    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:5()
+      100    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:6()
+       54    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:7()
+        1    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:7()
+        1    0.000    0.000    0.001    0.001 {built-in method exec}
+      100    0.001    0.000    0.001    0.000 {built-in method print}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        4    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}</p>
+
+<p>The canonical version is unremarkable, except that it <em>seems</em> like it should be faster.</p>
+
+<pre><code>     103 function calls in 0.001 seconds
+</code></pre>
+
+<p>Ordered by: standard name</p>
+
+<p>ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.001    0.001 canonical_fizzbuzz.py:1()
+        1    0.000    0.000    0.001    0.001 {built-in method exec}
+      100    0.001    0.000    0.001    0.000 {built-in method print}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}</p>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
