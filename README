@@ -1,3 +1,5 @@
+My lighting talk on these fizzbuzz riffs is here: http://slides.com/davidthewatson/obfuscated-fizzbuzz#/
+
 My mildly dysfunctional versions of FizzBuzz in python 3.
 
 The shortest of these is the single line lambda version that is not pep8-compliant due to the line length. I've yet to see a shorter version in python 3. This clocks in at 151 characters.
