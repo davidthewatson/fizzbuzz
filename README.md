@@ -6,9 +6,9 @@ The shortest of these is the single line lambda version that is not pep8-complia
 
          205 function calls in 0.001 seconds
 
-   Ordered by: standard name
+    Ordered by: standard name
 
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
       101    0.000    0.000    0.000    0.000 non-pep8_lambda_fizzbuzz.py:1(<genexpr>)
       100    0.000    0.000    0.000    0.000 non-pep8_lambda_fizzbuzz.py:1(<lambda>)
         1    0.000    0.000    0.001    0.001 non-pep8_lambda_fizzbuzz.py:1(<module>)
@@ -20,9 +20,9 @@ The pep8-compliant lambda version is longer, but perhaps more readable. Performa
 
          205 function calls in 0.001 seconds
 
-   Ordered by: standard name
+    Ordered by: standard name
 
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
       101    0.000    0.000    0.000    0.000 pep8_lambda_fizzbuzz.py:1(<genexpr>)
       100    0.000    0.000    0.000    0.000 pep8_lambda_fizzbuzz.py:1(<lambda>)
         1    0.000    0.000    0.001    0.001 pep8_lambda_fizzbuzz.py:1(<module>)
@@ -34,9 +34,9 @@ The loopy set version is surprisingly fast given how much more iteration there i
 
          524 function calls in 0.001 seconds
 
-   Ordered by: standard name
+    Ordered by: standard name
 
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
         1    0.000    0.000    0.001    0.001 pep8_loopy_sets_fizzbuzz.py:1(<module>)
        34    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:3(<genexpr>)
       100    0.000    0.000    0.000    0.000 pep8_loopy_sets_fizzbuzz.py:3(<lambda>)
@@ -55,9 +55,9 @@ The canonical version is unremarkable, except that it _seems_ like it should be 
 
          103 function calls in 0.001 seconds
 
-   Ordered by: standard name
+    Ordered by: standard name
 
-   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
         1    0.000    0.000    0.001    0.001 canonical_fizzbuzz.py:1(<module>)
         1    0.000    0.000    0.001    0.001 {built-in method exec}
       100    0.001    0.000    0.001    0.000 {built-in method print}
