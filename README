@@ -63,3 +63,4 @@ The canonical version is unremarkable, except that it _seems_ like it should be 
       100    0.001    0.000    0.001    0.000 {built-in method print}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 
+<a href="http://davidwatson.org/">davidwatson.org</a>
